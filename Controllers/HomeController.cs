@@ -4,7 +4,7 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using FluxoCaixa03.Models;
+using FluxoCaixa03.Models.ViewModels;
 
 namespace FluxoCaixa03.Controllers
 {
@@ -18,6 +18,7 @@ namespace FluxoCaixa03.Controllers
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
+            ViewData["Nascimento"] = "20/04/1962";
 
             return View();
         }
